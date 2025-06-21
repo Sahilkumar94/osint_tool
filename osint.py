@@ -1,5 +1,5 @@
 import asyncio
-from modules import facebook, instagram, google, microsoft, snapchat, twitter, yahoo
+from modules import facebook, instagram, google, microsoft, snapchat, twitter, yahoo, amazon
 
 async def main(email):
     print(f"\n🔍 Checking OSINT email linkage for: {email}\n")
@@ -10,6 +10,7 @@ async def main(email):
     await snapchat.check(email)
     await twitter.check(email)
     await yahoo.check(email)
+    await amazon.check(email)
 
 if __name__ == "__main__":
     import sys
